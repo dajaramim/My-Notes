@@ -113,12 +113,12 @@ We can create better-organized, more search engine-friendly, and more accessible
   <progress value="50" max="100"></progress>
 
 ### Good Practices
-1. Use only one `<h1>` per document
+1. Use only one `<h1>` per document.
 2. Don't skip heading levels. If you use `<h2>`, then don't use  `<h4>` right after.
 3. Use `<figure>` and `<figcaption>` to add captions to an image.
 4. Do not use divs to create semantic tags like header or footer.
 5. Avoid using `<b>` and `<i>` for bolding or italics. Prefer `<strong>` and `<em>`.
-6. Don't place block-level elements within inline elements
+6. Don't place block-level elements within inline elements.
 
 
 ## Computer Science
