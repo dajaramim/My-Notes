@@ -72,21 +72,53 @@ There are many more tags, in the link below.
 [Documentation HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ### Semantic
-We can create a better organized HTML using the tags:
-- `<header></header>`  
-- `<nav></nav>`  
-- `<main></main>` 
-- `<article></article>` 
-- `<aside></aside>` 
-- `<section></section>` 
-- `<footer></footer>` 
-- `<details></details>` 
-- `<summary></summary>` 
-- `<figure></figure>` 
-- `<figcaption></figcaption>` 
-- `<mark></mark>` 
-- `<time></time>` 
-- `<progress></progress>` 
+We can create better-organized, more search engine-friendly, and more accessible HTML using the following tags:
+- `<header>` for the top section of the webpage.
+- `<nav>`  this section contains navigation links.
+- `<main>` this is the section most important of the webpage.
+- `<article>` this is for an independent piece of content.
+- `<aside>` this is a sidebar typically used for supplementary      information, advertisements, or related articles.
+- `<section>` this tag is used to mark up sections that are thematically related or to break down a theme into different parts.
+- `<footer>` this tag is used to define the footer section of a webpage, typically containing elements such as copyright information, contact details, or social media links.
+- `<details>` and `<summary>` are used to make a collapsible section of content.
+  Example of details and summary.
+
+    ```
+    <details>
+        <summary>Click to expand</summary>
+        <p>Content goes here</p>
+    </details> 
+    ```
+  
+- `<figure>` and `<figcaption>`  are tags used to include visual content within a document, along with a caption that references the image or visual content. 
+     ```
+    <figure>
+        <img src="image.jpg" alt="Image description" />
+        <figcaption>Image caption</figcaption>
+    </figure>
+    ```
+- `<mark>` this tag is used to mark up text that has been highlighted for some reason
+
+    ```
+    <p>Here is some <mark>highlighted</mark> text.</p>
+    ```
+    <p>Here is some <mark>highlighted</mark> text.</p>
+
+- `<time>` this tag is used to mark up date or time
+- `<progress>` this tag is used to mark up a progress bar
+  
+  ```
+  <progress value="50" max="100"></progress>
+  ```
+  <progress value="50" max="100"></progress>
+
+### Good Practices
+1. Use only one `<h1>` per document
+2. Don't skip heading levels. If you use `<h2>`, then don't use  `<h4>` right after.
+3. Use `<figure>` and `<figcaption>` to add captions to an image.
+4. Do not use divs to create semantic tags like header or footer.
+5. Avoid using `<b>` and `<i>` for bolding or italics. Prefer `<strong>` and `<em>`.
+6. Don't place block-level elements within inline elements
 
 
 ## Computer Science
